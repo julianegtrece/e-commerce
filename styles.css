@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,h2,h3,h4,h5{
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  h5{
+    font-size: 1px;
+  }
+  
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+  
+  
+  
+  
+  
+  
+  /* Style all font awesome icons */
+  
+  
+  .fa {
+      padding: 11px;
+      font-size: 5px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 40%;
+      margin: 5px;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    
+    /* Set a specific color for each brand */
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }  
+  
+  
+  /* <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a> */
+  
+  
+  
+  .container-slides{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .default-section{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .column{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .section-minibarners{
+    max-width: 100%;
+  }
+  
+  /* .minibarner-img{
+    width: 400px;
+    height: auto;
+    margin: 10px;
+  } */
+  
+  
+  .minibarner{
+    margin-top: 15px;
+    height: auto;
+    max-width: 1320px;
+  }
+  
+  .posts-articulos{
+    max-width: 1000px;
+    background-color: #55ACEE;
+    margin-top: 15px;
+  }
+  
+  .post-articulo{
+    width: 100%;
+    
+  }
+  
+  .item-index{
+    background-color: blue;
+  }
+  
+  /* logo mercadopago */
+  
+  .imgmercadopago{
+    max-width: 600px;
+    border-radius: 40%;
+  
+  }
+  
+  .footer{
+    margin-top: 100px;
+  }
+  
+  
+  .footer-container{
+    max-width: 1320px;
+  }
+  
+  .btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+  }
+  
+  .footer{
+    background: rgb(180,38,162);
+    background: linear-gradient(90deg, rgba(180,38,162,0.24693627450980393) 1%, rgba(255,255,255,1) 100%);
+    border-top: 1px solid rgba(180,38,162,0.24693627450980393);
+  }
+  
+
+  #new-board-btn {
+    white-space: normal;
+}

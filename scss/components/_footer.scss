@@ -1,0 +1,37 @@
+$font-logo:'Yellowtail', cursive;
+$font-gral: 'Open Sans', sans-serif;
+
+
+.footer-box{
+    background: rgb(180,38,162);
+    background: linear-gradient(90deg, rgba(180,38,162,0.24693627450980393) 1%, rgba(255,255,255,1) 100%);
+    border-top: 1px solid rgba(180,38,162,0.24693627450980393);
+  }
+
+
+
+
+
+.footer-box{
+    .footer-box-items{
+        .footer-box-item-datos{
+            .nombre-empresa{
+                font-family: $font-logo;
+                font-size: 50px;
+
+            }
+            p{
+                
+                font-family: $font-gral;
+            }
+
+        }
+        
+        .footer-box-item-info{
+            p{
+                font-family: $font-gral;
+            }
+
+        }
+    }
+}

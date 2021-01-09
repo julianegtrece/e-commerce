@@ -1,0 +1,123 @@
+.fa {
+  padding: 11px;
+  font-size: 5px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+  margin: 5px; }
+  .fa:hover {
+    opacity: 0.7; }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white; }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white; }
+
+.fa-instagram {
+  background: #125688;
+  color: white; }
+
+.titulo-logo {
+  font-size: 20px;
+  text-decoration: none; }
+
+.container-slides {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 15px; }
+
+.minibarner {
+  max-width: 100%;
+  margin-bottom: 15px;
+  min-height: 50%; }
+
+.posts-articulos {
+  max-width: 80%;
+  height: auto;
+  background-color: #55ACEE; }
+  .posts-articulos .posts-articulo {
+    margin-bottom: 15px; }
+    .posts-articulos .posts-articulo .item-articulo-box .articulo-descripcion {
+      font-family: "Open Sans", sans-serif; }
+    .posts-articulos .posts-articulo .item-articulo-box .articulo-monto {
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 15px; }
+
+.boton-comprar {
+  visibility: hidden; }
+
+.item-articulo-box:hover .boton-comprar {
+  visibility: visible; }
+
+.metodos-pago-box .metodos-pago-box-imagenes .imgmercadopago {
+  max-width: 60%;
+  margin-bottom: 15px; }
+
+.btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999; }
+
+.footer-box {
+  background: #b426a2;
+  background: linear-gradient(90deg, rgba(180, 38, 162, 0.246936) 1%, white 100%);
+  border-top: 1px solid rgba(180, 38, 162, 0.246936); }
+
+.footer-box .footer-box-items .footer-box-item-datos .nombre-empresa {
+  font-family: "Yellowtail", cursive;
+  font-size: 50px; }
+
+.footer-box .footer-box-items .footer-box-item-datos p {
+  font-family: "Open Sans", sans-serif; }
+
+.footer-box .footer-box-items .footer-box-item-info p {
+  font-family: "Open Sans", sans-serif; }
+
+.nosotros-info {
+  max-width: 85%; }
+
+.thumbnail {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bold; }
+
+.nosotros-texto {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  max-width: 600px; }
+
+.contacto-texto {
+  font-family: 'Courier New', Courier, monospace; }
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4 {
+  font-family: "Open Sans", sans-serif; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px; }

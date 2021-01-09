@@ -1,0 +1,29 @@
+@import "components/header";
+@import "components/body";
+@import "components/whattsap-icon";
+@import "components/footer";
+@import "components/body-nosotros";
+
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+$fuente: 'Open Sans', sans-serif;
+
+h1,h2,h3,h4{
+    font-family:$fuente;
+}
+
+
+
+p{
+    font-family: $fuente;
+    font-size: 14px;
+}
+
+

@@ -1,0 +1,70 @@
+$margin-bot: 15px;
+$font-family: 'Open Sans',
+sans-serif;
+
+$max-width: 80%;
+
+
+
+.container-slides {
+  display: block;
+  max-width: 100%;
+  margin-bottom: $margin-bot;
+
+}
+
+.minibarner {
+  max-width: 100%;
+  margin-bottom: $margin-bot;
+  min-height: 50%;
+
+}
+
+
+.posts-articulos {
+
+  max-width: 80%;
+  height: auto;
+  background-color: #55ACEE;
+
+  .posts-articulo {
+    .item-articulo-box {
+      .articulo-descripcion {
+        font-family: $font-family;
+      }
+
+      .articulo-monto {
+        font-family: $font-family;
+        margin-bottom: $margin-bot;
+      }
+
+
+    }
+
+    margin-bottom: $margin-bot;
+  }
+}
+
+
+
+
+.boton-comprar {
+  visibility: hidden;
+}
+
+
+.item-articulo-box:hover .boton-comprar {
+  visibility: visible;
+}
+
+
+
+.metodos-pago-box{
+  .metodos-pago-box-imagenes{
+    .imgmercadopago{
+      max-width: 60%;
+      margin-bottom: $margin-bot;
+    }
+
+  }
+}

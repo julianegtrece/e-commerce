@@ -1,0 +1,49 @@
+$color-base-redes-item: white;
+
+
+@mixin items-redes-styles {
+    padding: 11px;
+    font-size: 5px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40%;
+    margin: 5px;
+}
+
+
+@mixin items-redes-hover {
+    opacity: 0.7;
+}
+
+
+
+@mixin fondo-color-redes($color) {
+    background:$color;
+    color: $color-base-redes-item;
+}
+
+
+.fa{
+    @include items-redes-styles();
+    &:hover{
+        @include items-redes-hover();
+
+    }
+}
+
+.fa-facebook{
+    @include fondo-color-redes(#3B5998);
+}
+.fa-twitter{
+    @include fondo-color-redes(#55ACEE);
+}
+.fa-instagram{
+    @include fondo-color-redes(#125688);
+
+}
+
+.titulo-logo{
+    font-size: 20px;
+    text-decoration: none;
+}
