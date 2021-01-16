@@ -49,6 +49,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
     <!-- FAVICON, icono de las pestanas -->
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
 
@@ -77,11 +79,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="tienda.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">Novedades</a>
+                            <a class="nav-link" href="novedades.html">Tienda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -93,12 +93,10 @@
                                 Como LLegar
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="comollego.html">Microcentro</a></li>
-                                <li><a class="dropdown-item" href="#">Flores</a></li>
-                                <li><a class="dropdown-item" href="#">Avellaneda</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation1" href="comollego.html">Microcentro</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation2" href="comollego.html">Flores</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation3" href="comollego.html">Avellaneda</a></li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Proximadamente</a></li>
                             </ul>
                         </li>
@@ -179,109 +177,16 @@
 
 
 
+    <div class="container d-flex flex-column align-items-center">
+    
+        <div class="row contenedor-novedades-items d-flex justify-content-between">
 
-    <div class="container posts-articulos d-flex flex-column align-items-center">
-        <div class="row post-articulo">
-
-
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
-
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4  mb-4 d-flex flex-column align-items-center item-articulo-box">
-
-                <img src="imagenes/articulo.webp" class="img-responsive minibarner-img" alt="articulos de a la venta">
-                <div class="descripcion-articulo">Silla gamer</div>
-                <div class="precio-art-monto">100reais</div>
-                <div class="articulo-boton-comprar">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-block btn-lg btn-sm boton-comprar">COMPRAR</button>
-
-                </div>
-            </div>
         </div>
-
-
-
-
-        
-
-
+    
     </div>
+
+
+
 
 
 
@@ -340,6 +245,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
+
+    <script src="js/carga-articulos-index.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

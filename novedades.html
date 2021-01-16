@@ -49,10 +49,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
     <!-- FAVICON, icono de las pestanas -->
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
 
-    <title>Isabelle</title>
+    <title>Tienda</title>
 </head>
 
 
@@ -75,13 +78,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="tienda.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">Novedades</a>
+                            <a class="nav-link" href="novedades.html">Tienda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -93,9 +94,12 @@
                                 Como LLegar
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="comollego.html">Microcentro</a></li>
-                                <li><a class="dropdown-item" href="#">Flores</a></li>
-                                <li><a class="dropdown-item" href="#">Avellaneda</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation1"
+                                        href="comollego.html">Microcentro</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation2"
+                                        href="comollego.html">Flores</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation3"
+                                        href="comollego.html">Avellaneda</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -126,89 +130,104 @@
     </header>
 
 
-    <section class="container-slides">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagenes/slide-test.jpg" class="d-block w-100"
-                        alt="Imagen slides que muestran articulos sea de novedades ofertas y promociones">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/slide-test.jpg" class="d-block w-100"
-                        alt="Imagen slides que muestran articulos sea de novedades ofertas y promociones">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/slide-test.jpg" class="d-block w-100"
-                        alt="Imagen slides que muestran articulos sea de novedades ofertas y promociones">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-    </section>
-
     <body>
 
-        <div class="container">
+        <div class="container d-flex flex-column align-items-center">
 
             <div class="row">
-
-                <div class="col-lg-3">
-                    <h1 class="my-4">Isabelle</h1>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item active">Mujer</a>
-                        <a href="#" class="list-group-item">Hombre</a>
-                        <a href="#" class="list-group-item">Ninos</a>
+                <section class="container-slides">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="http://placehold.it/1680x570" class="d-block w-100"
+                                    alt="Imagen slides que muestran articulos sea de novedades ofertas y promociones">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="http://placehold.it/1680x570" class="d-block w-100"
+                                    alt="Imagen slides que muestran articulos sea de novedades ofertas y promociones">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="http://placehold.it/1680x570" class="d-block w-100"
+                                    alt="Imagen slides que muestran articulos sea de novedades ofertas y promociones">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
                     </div>
-                </div>
+                </section>
+            </div>
 
-                <div class="col-lg-9">
 
-                    <div class="card mt-4">
-                        <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+
+
+
+
+            <div class="row container-fluid d-flex justify-content-center contenedor-novedades">
+
+                <div class="row contenedor-novedad flex-wrap">
+
+
+                    <div class="col-12 col-md-12 col-lg-8  contenedor-imagen">
+                        <img class="card-img-top img-fluid imagen-item" src="http://placehold.it/500x250" alt="">
+    
+    
+                    </div>
+    
+    
+                    <div class="col-12 col-md-12 col-lg-4">
                         <div class="card-body">
                             <h3 class="card-title">Pantalon Frisa</h3>
                             <h4>$1000</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+                            <p class="card-text">Descripcion: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sapiente
                                 dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam
                                 sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
                             <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                    
+    
+                            <div class="Cantidad">Ingrese cantidad []</div>
+                            <p><button class="botonCompra" data-id="0">Añadir al carro</button></p>
+    
                         </div>
                     </div>
-
-
-                    <div class="card card-outline-secondary my-4">
-                        <div class="card-header">
-                            Revisiones
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam
-                                inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam
-                                aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-                            <small class="text-muted">Publicado por EricRicardo el 3/1/17</small>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam
-                                inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam
-                                aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-                            <small class="text-muted">Publicado por Pepes el 3/1/17</small>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam
-                                inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam
-                                aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-                            <small class="text-muted">Publicado por Carlos el 3/1/17</small>
-                            <hr>
-                            <a href="#" class="btn btn-success">Salir reviciones</a>
-                        </div>
-                    </div>
-
+    
                 </div>
+
+
+
+
+
+                
+
+            </div>
+
+
+
+            
+
+
+
+
+
+            <div class="row contenedor-novedades-items d-flex justify-content-between">
+                <!-- <a href="#">
+                    <div class="col-6 col-md-6 col-lg-3 card producto">
+                        <img src="http://placehold.it/200x220" alt="Denim Jeans" style="width:100%">
+                        <h1 class="nombre-producto">Producto</h1>
+                        <p class="precio-producto">$19.99</p>
+                        <p class="descripcion">Some text about the product..</p>
+                        <p><button class="botonCompra" data-id="0">Añadir al carro</button></p>
+                    </div>
+                </a> -->
+
+
+
+
 
             </div>
 
@@ -217,22 +236,8 @@
 
 
 
-        <div class="container">
 
-            <div class="container container-novedades d-flex justify-content-center">
-                <div class="row container-novedades-items">
-                    <h3>En proceso</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VibGLc41UvQ" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-
-
-
-
-            </div>
-
-        </div>
+        
 
 
 
@@ -280,6 +285,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
         </script>
+
+        <script src="js/scripts.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carga-articulos.js"></script>
+
+
+
+
+
     </body>
 
 </html>

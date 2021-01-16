@@ -48,7 +48,8 @@
     <!-- BOOTSTRAP only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- FAVICON, icono de las pestanas -->
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
 
@@ -78,33 +79,23 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tienda.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">Novedades</a>
+                            <a class="nav-link" href="novedades.html">Tienda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Como LLegar
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"data-bs-toggle="dropdown" aria-expanded="false">Como LLegar</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="comollego.html">Microcentro</a></li>
-                                <li><a class="dropdown-item" href="#">Flores</a></li>
-                                <li><a class="dropdown-item" href="#">Avellaneda</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation1"href="#">Microcentro</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation2" href="#">Flores</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation3" href="#">Avellaneda</a></li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Proximadamente</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+                        <li><hr class="dropdown-divider"></li>
                         <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li> -->
@@ -127,36 +118,49 @@
 
 
 
-    <div class="container-fluid">
 
-        <div class="container container-tienda d-flex justify-content-center">
-            <div class="row">
-                <div class="col container-comollego d-flex flex-column align-items-center d-grid">
-                    <div class="btn-group botones-locacion" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                            checked>
-                        <label class="btn btn-outline-primary" for="btnradio1">Suc. 1</label>
+    <div class="container container-comollego d-flex flex-column align-items-center">
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio2">Suc. 2</label>
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio3">Suc. 3</label>
-                    </div>
+        <div class="row botones-container">
+            <div class="btn-group botones-locacion" role="group" aria-label="Basic radio toggle button group">
 
-                    <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.129184324772!2d-58.38496167620342!3d-34.60252814218717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1608322355760!5m2!1ses!2sar" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <label class="btn btn-outline-primary boton-location" id="blocation1"
+                    for="btnradio1">Microcentro</label>
 
-                    
-                    
-                </div>
+                <label class="btn btn-outline-primary boton-location" id="blocation2" for="btnradio2">Flores</label>
+
+                <label class="btn btn-outline-primary boton-location" id="blocation3" for="btnradio3">Avellaneda</label>
             </div>
 
+        </div>
 
 
+        <div class="row mapa-containers">
+            <div class="row mapa-container">
+                <div class="col-8">
+                    <iframe class="gmaps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.129184324772!2d-58.38496167620342!3d-34.60252814218717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1608322355760!5m2!1ses!2sar"
+                        width="600" height="600" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="col-4">
+                    <p>Indicaciones</p>
+                    <p>Galeria 01 al fondo.</p>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
+
+
+
+
+
 
 
 
@@ -200,7 +204,8 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
 
-    <script src="css/style.css"></script>
+<script src="js/scripts.js"></script>
+
 
 
 

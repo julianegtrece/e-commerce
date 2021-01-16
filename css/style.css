@@ -109,6 +109,53 @@
 .contacto-texto {
   font-family: 'Courier New', Courier, monospace; }
 
+.botones-locacion {
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.container-comollego {
+  margin-bottom: 50px; }
+
+.botones-container, .mapa-containers {
+  width: 80%; }
+
+.contenedor-novedad {
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 30px; }
+
+.contenedor-novedades-items {
+  width: 80%; }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin: 1px; }
+
+.precio-producto {
+  color: grey;
+  font-size: 22px; }
+
+.card button, .card-body button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px; }
+
+.card button:hover {
+  opacity: 0.7; }
+
+.producto:hover {
+  box-shadow: inset -1px 0 0 lightgrey; }
+
 * {
   box-sizing: border-box;
   max-width: 100%;
