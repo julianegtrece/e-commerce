@@ -40,16 +40,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
 
     <!-- BOOTSTRAP only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
     <!-- FAVICON, icono de las pestanas -->
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
@@ -62,69 +62,104 @@
 
 <body>
 
+
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <h1 class="titulo-logo">Isabelle</h1>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top">
+
+
+            <div class="container d-flex justify-content-start ">
+                <a class="navbar-brand logo-font text-dark" href="#">
+                    <div class="logotipo-marca">Isabelle</div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+                <!-- links toggle -->
+
+
+                <div class="collapse navbar-collapse mi-navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav">
+
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link text-dark" aria-current="page" href="index.html">Inicio</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            <a class="nav-link text-dark" href="tienda.html">Tienda</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="nosotros.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Como LLegar
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item sectionBtonLocation" id="blocation1" href="comollego.html">Microcentro</a></li>
-                                <li><a class="dropdown-item sectionBtonLocation" id="blocation2" href="comollego.html">Flores</a></li>
-                                <li><a class="dropdown-item sectionBtonLocation" id="blocation3" href="comollego.html">Avellaneda</a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation1"
+                                        href="comollego.html">Microcentro</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation2"
+                                        href="comollego.html">Flores</a></li>
+                                <li><a class="dropdown-item sectionBtonLocation" id="blocation3"
+                                        href="comollego.html">Avellaneda</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="#">Proximadamente</a></li>
                             </ul>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
+
+
+
                     </ul>
-                    <nav class="navbar navbar-light bg-light">
-                        <div class="container col">
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
 
-                        </div>
 
-                    </nav>
+
+
 
                 </div>
+
+                <div class="contenedor-redes-sociales">
+                    <a href="#" class="fa fa-facebook fa-social-media"></a>
+                    <a href="#" class="fa fa-twitter fa-social-media"></a>
+                    <a href="#" class="fa fa-instagram fa-social-media"></a>
+                </div>
+
+                <a class="carrito-compras" href="#">
+                    <i class="fa icono-carrito">&#xf07a;</i>
+                    <span class='badge-carrito badge-carrito-warning' id='lblCartCount'>0</span>
+                </a>
+
             </div>
+
+
+
+
+
         </nav>
+
 
     </header>
 
 
-    <section class="container-slides">
+
+    <section class="container-slides contenedor-secciones">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -178,25 +213,30 @@
 
 
     <div class="container d-flex flex-column align-items-center">
-    
-        <div class="row contenedor-novedades-items d-flex justify-content-between">
+
+        <div class="row d-flex justify-content-between contenedor-index-productos">
 
         </div>
-    
+
     </div>
 
 
-
+    <div class="container">
+        <div class="separador">Medios de pago aceptados
+        </div>
+    </div>
 
 
 
     <div class="container d-flex justify-content-center metodos-pago-box">
         <div class="row d-flex justify-content-center metodos-pago-box-imagenes">
-            <img src="imagenes/mercadopagoLogo.png" class="img-responsive minibarner-img imgmercadopago"
+            <img src="./img/modos-pagos/mercadopago-footer.png" class="img-responsive minibarner-img imgmercadopago"
                 alt="imagen de mercado pago">
         </div>
 
     </div>
+
+
 
 
 
@@ -246,9 +286,11 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
 
-    <script src="js/carga-articulos-index.js"></script>
     <script src="js/productos.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/script-propiedades-carrito.js"></script>
+    <script src="js/script-index.js"></script>
+    <script src="js/script-tienda.js"></script>
+
 </body>
 
 </html>

@@ -1,10 +1,12 @@
-@import "components/header";
-@import "components/body";
-@import "components/whattsap-icon";
-@import "components/footer";
+@import "components/elements/header";
+@import "components/elements/whattsap-icon";
+@import "components/elements/footer";
+@import "components/elements/barra-separadora";
+
 @import "components/body-nosotros";
 @import "components/body-comollego";
-@import "components/body-novedades";
+@import "components/body-tienda";
+@import "components/body-index";
 
 
 
@@ -15,12 +17,19 @@
     padding: 0;
 }
 
+body{
+    margin-top: 10px;
+}
+
 $fuente: 'Open Sans', sans-serif;
 
 h1,h2,h3,h4{
     font-family:$fuente;
 }
 
+.contenedor-secciones{
+    margin-top: 81px;
+  }
 
 
 p{

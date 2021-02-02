@@ -1,0 +1,23 @@
+$font-family: 'Open Sans',
+sans-serif;
+
+.separador {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separador::before, .separador::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separador::before {
+    margin-right: .25em;
+}
+.separador::after {
+    margin-left: .25em;
+}
+
+.separador{
+    font-family: $font-family;
+}

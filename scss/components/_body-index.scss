@@ -1,0 +1,40 @@
+$margin-bot: 15px;
+$font-family: 'Open Sans',
+sans-serif;
+
+$max-width: 80%;
+
+
+
+.container-slides {
+  display: block;
+  max-width: 100%;
+  margin-bottom: $margin-bot;
+
+}
+
+.minibarner {
+  max-width: 100%;
+  margin-bottom: $margin-bot;
+  min-height: 50%;
+
+}
+
+
+
+.botonCompraIndex {
+  visibility: hidden;
+}
+
+
+.producto{
+  margin-bottom: 10px !important;
+}
+
+
+.producto:hover .botonCompraIndex {
+  visibility: visible;
+}
+
+
+

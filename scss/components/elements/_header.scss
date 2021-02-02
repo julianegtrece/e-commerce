@@ -1,0 +1,174 @@
+$color-base-redes-item: white;
+
+$font-family: 'Montserrat',
+sans-serif;
+
+
+
+
+.bg-color {
+  background-color: #fcd1d1;
+
+}
+
+
+.logotipo-marca {
+  font-size: 36px;
+  font-family: $font-family;
+}
+
+//REDES SOCIALES
+
+
+.fa-social-media {
+  padding: 8px 5px;
+  font-size: 30px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-social-media:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  margin-right: 10px;
+}
+
+
+.titulo-logo {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contenedor-redes-sociales {
+  margin-right: 40px;
+}
+
+//NAVBARRR STYLESSSS
+
+.mi-navbar-collapse {
+  width: 67% !important;
+}
+
+
+//barranavbarrrr
+
+//carrito Style
+
+.header {
+  background: rgb(0, 178, 255);
+  color: #fff;
+}
+
+#lblCartCount {
+  font-size: 14px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -13px;
+}
+
+.badge-carrito {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+
+
+
+.carrito-compras {
+  z-index: 3;
+  width: 50px;
+  right: 10%;
+  top: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.badge-carrito-warning {
+
+  position: fixed;
+}
+
+
+.icono-carrito {
+  font-size: 50px !important;
+}
+
+.carrito-compras:hover .icono-carrito {
+  color: gray;
+}
+
+@media only screen and (max-width:996px) {
+  .carrito-compras {
+    position: fixed;
+    right: 5%;
+
+  }
+
+  .logotipo-marca {
+    margin-left: 20px;
+  }
+
+  .logotipo-marca {
+    font-size: 25px;
+  }
+
+  .icono-carrito {
+    font-size: 40px !important;
+  }
+
+  .contenedor-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 55px;
+    margin-right: 0px;
+    right: 0px;
+    bottom: 77px;
+    z-index: 999;
+
+  }
+  .fa-social-media{
+    width: 50px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:976px) {
+  .mi-navbar-collapse {
+    width: 54% !important;
+  }
+
+}
